@@ -9,22 +9,22 @@ client.once("ready", () => {
   console.log("Ready!");
 });
 
-
-
 //upon user joining
 welcome(client);
 
 //upon msgs
 client.on("message", (msg) => {
   //ban event by mentioning
-  
+
   if (msg.content.includes("!ban")) {
     //ban user
     ban(msg);
   }
-  if(msg.content.includes('addrole')){
-    return msg.member.roles.add(msg.member.guild.roles.cache.get('919279049946308628')); //Issuing a role
+  if (msg.content.includes("addrole")) {
+    return msg.member.roles.add(
+      msg.member.guild.roles.cache.get("408636649791029249")
+    ); //Issuing a role
   }
 });
 
-client.login("NzI3MzczMDU2MzcyMzc1NTgz.Xvq48g.NBBckAFPAle63YAYM6gALay1XtQ");
+client.login("OTIxMzYyOTU0ODc4ODY1NDE5.Ybx0Hg.ijtWQCiRdHUdmsztmwnLKxNUO7k");

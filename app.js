@@ -43,10 +43,14 @@ app.use(function (err, req, res, next) {
 
 //connect to db
 
-mongoose.connect("mongodb+srv://hamza:hamza@cluster0-ho2sf.mongodb.net/discord", () => {
-  console.log("DB CONNECTED!");
-});
+mongoose.connect(
+  "mongodb+srv://admin:090078601@cluster0.zfuqy.mongodb.net/courseDiscordBot",
+  () => {
+    console.log("DB CONNECTED!");
+  }
+);
 
 app.listen(process.env.PORT || 5000, () => {
   console.log("API ONLINE!");
 });
+
